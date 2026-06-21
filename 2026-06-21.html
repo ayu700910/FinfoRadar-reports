@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 2026-W25 財經週報 | SpaceX 震撼上市週</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        html, body {
+            overflow-x: hidden;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            line-height: 1.6;
+            padding: 16px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #1e293b;
+        }
+        
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 4px solid #f59e0b;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            color: #1e3a5f;
+            margin-bottom: 12px;
+            font-weight: 800;
+        }
+        
+        .header .subtitle {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 8px;
+        }
+        
+        .header .tagline {
+            font-size: 20px;
+            color: #f59e0b;
+            font-weight: 600;
+            margin-top: 16px;
+        }
+        
+        .header .summary {
+            font-size: 16px;
+            color: #475569;
+            margin-top: 20px;
+            padding: 20px;
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            border-radius: 8px;
+            text-align: left;
+            line-height: 1.8;
+        }
+        
+        /* Section */
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            color: #1e3a5f;
+            margin-bottom: 24px;
+            font-weight: 700;
+            padding-left: 12px;
+            border-left: 6px solid #f59e0b;
+        }
+        
+        /* Grid layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        
+        /* Cards */
+        .card {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            border-color: #f59e0b;
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .card-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 12px;
+        }
+        
+        .card-content {
+            font-size: 15px;
+            color: #475569;
+            line-height: 1.7;
+        }
+        
+        /* Chips */
+        .chip {
+            display: inline-block;
+            padding: 4px 12px;
+            margin: 4px;
+            border-radius: 16px;
+            font-size: 13px;
+            font-weight: 600;
+        }
+        
+        .chip-kol {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+        
+        .chip-tag {
+            background: #f1f5f9;
+            color: #64748b;
+        }
+        
+        .chip-bullish {
+            background: #dcfce7;
+            color: #16a34a;
+        }
+        
+        .chip-neutral {
+            background: #fef3c7;
+            color: #ca8a04;
+        }
+        
+        .chip-bearish {
+            background: #fee2e2;
+            color: #dc2626;
+        }
+        
+        .chip-stock {
+            background: #1e3a5f;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        
+        th {
+            background: #1e3a5f;
+            color: #ffffff;
+            padding: 12px;
+            text-align: left;
+            font-weight: 700;
+            word-break: break-word;
+        }
+        
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e2e8f0;
+            word-break: break-word;
+            vertical-align: top;
+        }
+        
+        tr:hover {
+            background: #f8fafc;
+        }
+        
+        /* Risk cards */
+        .risk-card {
+            background: #ffffff;
+            border-left: 6px solid #dc2626;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(220, 38, 38, 0.1);
+        }
+        
+        .risk-title {
+            font-size: 17px;
+            font-weight: 700;
+            color: #dc2626;
+            margin-bottom: 8px;
+        }
+        
+        .risk-content {
+            font-size: 14px;
+            color: #475569;
+            line-height: 1.7;
+        }
+        
+        /* Timeline */
+        .timeline-item {
+            display: flex;
+            margin-bottom: 24px;
+            padding-left: 32px;
+            position: relative;
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background: #f59e0b;
+            border-radius: 50%;
+            border: 3px solid #ffffff;
+            box-shadow: 0 0 0 2px #f59e0b;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 13px;
+            top: 24px;
+            width: 2px;
+            height: calc(100% + 8px);
+            background: #e2e8f0;
+        }
+        
+        .timeline-item:last-child::after {
+            display: none;
+        }
+        
+        .timeline-date {
+            font-weight: 700;
+            color: #f59e0b;
+            min-width: 120px;
+            font-size: 15px;
+        }
+        
+        .timeline-content {
+            flex: 1;
+        }
+        
+        .timeline-title {
+            font-weight: 700;
+            color: #1e3a5f;
+            margin-bottom: 4px;
+            font-size: 16px;
+        }
+        
+        .timeline-desc {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        /* KOL Strategy cards */
+        .kol-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        
+        .kol-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        
+        .kol-avatar {
+            font-size: 36px;
+            margin-right: 12px;
+        }
+        
+        .kol-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e3a5f;
+        }
+        
+        .kol-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        
+        .kol-stat {
+            background: #ffffff;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .kol-stat-label {
+            font-size: 12px;
+            color: #64748b;
+            margin-bottom: 4px;
+        }
+        
+        .kol-stat-value {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1e3a5f;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #16a34a 0%, #f59e0b 50%, #dc2626 100%);
+            border-radius: 4px;
+        }
+        
+        .kol-action {
+            font-size: 14px;
+            color: #475569;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        
+        /* Quote */
+        .quote {
+            background: #f8fafc;
+            border-left: 4px solid #f59e0b;
+            padding: 16px;
+            margin-bottom: 16px;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        
+        .quote-text {
+            font-size: 15px;
+            color: #1e3a5f;
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+        
+        .quote-author {
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 600;
+            text-align: right;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 2px solid #e2e8f0;
+            color: #64748b;
+            font-size: 14px;
+        }
+        
+        .footer-source {
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        /* Stock card specific */
+        .stock-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .stock-symbol {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1e3a5f;
+        }
+        
+        .stock-mentions {
+            background: #fef3c7;
+            color: #92400e;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 8px;
+                font-size: 15px;
+            }
+            
+            .container {
+                padding: 16px;
+                border-radius: 12px;
+            }
+            
+            .header h1 {
+                font-size: 24px !important;
+            }
+            
+            .header .subtitle {
+                font-size: 14px !important;
+            }
+            
+            .header .tagline {
+                font-size: 16px !important;
+            }
+            
+            .header .summary {
+                font-size: 14px !important;
+                padding: 12px;
+            }
+            
+            .section-title {
+                font-size: 20px !important;
+            }
+            
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+            
+            .card {
+                padding: 16px;
+            }
+            
+            .card-title {
+                font-size: 16px !important;
+            }
+            
+            .card-content {
+                font-size: 14px !important;
+            }
+            
+            /* Table to cards on mobile */
+            .debate-table {
+                display: block !important;
+            }
+            
+            .debate-table thead {
+                display: none !important;
+            }
+            
+            .debate-table tbody, .debate-table tr, .debate-table td {
+                display: block !important;
+                width: 100% !important;
+            }
+            
+            .debate-table tr {
+                margin-bottom: 16px !important;
+                padding: 12px !important;
+                border: 2px solid #e2e8f0 !important;
+                border-radius: 8px !important;
+                background: #ffffff;
+            }
+            
+            .debate-table td {
+                border: none !important;
+                padding: 8px 0 !important;
+                text-align: left !important;
+            }
+            
+            .debate-table td::before {
+                content: attr(data-label);
+                font-weight: 700;
+                color: #1e3a5f;
+                display: block;
+                margin-bottom: 4px;
+                font-size: 14px;
+            }
+            
+            .timeline-item {
+                padding-left: 24px;
+            }
+            
+            .timeline-date {
+                min-width: auto;
+                display: block;
+                margin-bottom: 4px;
+            }
+            
+            .kol-stats {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .chip {
+                font-size: 12px;
+                padding: 3px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 2026-W25 財經週報</h1>
+            <div class="subtitle">2026-06-15 至 2026-06-21</div>
+            <div class="tagline">SpaceX 震撼上市週 | 半導體輪動加速、美伊停火倒數</div>
+            <div class="summary">
+                <strong>💡 本週總結：</strong> 本週 SpaceX 以 IPO 兩日累漲 42%、市值破 3 兆震撼市場，下月納入 QQQ 將顯著提升指數波動；美伊停戰協議 6/20 簽署在即、原油跌至 81 美元，若續跌破 70 美元將壓低 7-8 月通膨並扭轉聯準會升息預期；半導體族群從被動元件輪動至功率半導體，歐美 IDM 交期拉到 99 週、臺廠受惠二工轉單；估值超越 2000 泡沫但只要算力未過剩距破滅仍有距離；槓桿累積達歷史高位，短期波動放大但宏觀中性+估值便宜支撐逢回就買策略——永遠不空手、用再平衡取代猜高低點、高位不追、回調碰季線半年線直接接刀。
+            </div>
+        </div>
+
+        <!-- 核心議題 -->
+        <div class="section">
+            <h2 class="section-title">🔥 本週核心議題</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">🚀 SpaceX IPO 改寫市值榜單與指數結構</div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 8px;">
+                            <span class="chip chip-kol">皓哥</span>
+                            <span class="chip chip-kol">何星</span>
+                            <span class="chip chip-kol">股癌</span>
+                        </div>
+                        <p style="margin-bottom: 8px;"><strong>🎯 核心結論：</strong>IPO 定價 135 美元、兩日累漲 42% 至 192 美元，市值突破 3 兆美元超越微軟、躍居美國市值第六；下月將快速納入 QQQ（IPO 後 15 個交易日），與特斯拉合計市值破 4 兆美元，指數「夢想成分」大增</p>
+                        <div>
+                            <span class="chip chip-tag">#SpaceX</span>
+                            <span class="chip chip-tag">#IPO浪潮</span>
+                            <span class="chip chip-tag">#指數重構</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">🕊️ 美伊停戰協議進入最後倒數</div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 8px;">
+                            <span class="chip chip-kol">皓哥</span>
+                        </div>
+                        <p style="margin-bottom: 8px;"><strong>🎯 核心結論：</strong>6/20（五）瑞士簽署和平協議，伊朗 30 天內清除荷姆茲海峽水雷，60 天後談判核武問題；原油已從破百跌至 81 美元，Polymarket 民調顯示 94% 機率達成協議</p>
+                        <div>
+                            <span class="chip chip-tag">#中東停火</span>
+                            <span class="chip chip-tag">#油價</span>
+                            <span class="chip chip-tag">#通膨降溫</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">💾 半導體族群輪動加速</div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 8px;">
+                            <span class="chip chip-kol">股癌</span>
+                        </div>
+                        <p style="margin-bottom: 8px;"><strong>🎯 核心結論：</strong>被動元件參與者暴增、籌碼開始亂，轉向離散元件與功率半導體；安世半導體被制裁後訂單外溢、Non-China 趨勢加速，歐美 IDM（TI、STM、ON、IFNNY）交期拉到 99 週以上超過一年</p>
+                        <div>
+                            <span class="chip chip-tag">#被動元件</span>
+                            <span class="chip chip-tag">#功率半導體</span>
+                            <span class="chip chip-tag">#800V_DC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">🦅 聯準會華許首秀放鷹</div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 8px;">
+                            <span class="chip chip-kol">皓哥</span>
+                        </div>
+                        <p style="margin-bottom: 8px;"><strong>🎯 核心結論：</strong>FOMC 以 12:0 全票維持利率 3.5%-3.75% 不變，點陣圖顯示 18 位官員中 9 位預估年底至少升息一次、6 位預估兩次；核心 PCE 通膨預期從上季大幅上調至 3.6%</p>
+                        <div>
+                            <span class="chip chip-tag">#FOMC</span>
+                            <span class="chip chip-tag">#華許</span>
+                            <span class="chip chip-tag">#升息預期</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-title">⚖️ 資產配置與槓桿管理哲學</div>
+                    <div class="card-content">
+                        <div style="margin-bottom: 8px;">
+                            <span class="chip chip-kol">大仁哥</span>
+                            <span class="chip chip-kol">何星</span>
+                        </div>
+                        <p style="margin-bottom: 8px;"><strong>🎯 核心結論：</strong>永遠不要空手，臺股從 28000 漲至 46000 錯過 18000 點；降波動應直接減碼而非置換標的（QQQ/VOO 置換增加決策點易翻車）；用再平衡自動賣高買低（50/50 配置股票漲至 100 萬時再平衡至 75/75）</p>
+                        <div>
+                            <span class="chip chip-tag">#永遠不空手</span>
+                            <span class="chip chip-tag">#資產配置</span>
+                            <span class="chip chip-tag">#再平衡</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 觀點分歧 -->
+        <div class="section">
+            <h2 class="section-title">⚖️ 觀點分歧處</h2>
+            <table class="debate-table">
+                <thead>
+                    <tr>
+                        <th>議題</th>
+                        <th>皓哥</th>
+                        <th>股癌</th>
+                        <th>何星</th>
+                        <th>大仁哥</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="議題"><strong>SpaceX 要不要追高？</strong></td>
+                        <td data-label="皓哥"><span class="chip chip-neutral">🟡 謹慎</span><br>IPO 驗證資金面信心，但 2300 億美元 IPO 規模恐壓垮市場承接力；太空能源敘事本質是把地面效率問題轉化為太空造夢投資</td>
+                        <td data-label="股癌"><span class="chip chip-bullish">🟢 FOMO</span><br>看到 SpaceX 都會去買了，火箭什麼時候會賺錢根本不知道；散戶單日淨買 1 億美元佔全美七成顯示 FOMO 情緒濃厚</td>
+                        <td data-label="何星"><span class="chip chip-neutral">🟡 等納入</span><br>暫不追高，用 QQQ 指數自動納入的方式持有，等七巨頭反彈後可考慮賣出部分 Tesla 或 Meta 置換</td>
+                        <td data-label="大仁哥">—</td>
+                    </tr>
+                    <tr>
+                        <td data-label="議題"><strong>降波動應該減碼還是置換標的？</strong></td>
+                        <td data-label="皓哥">—</td>
+                        <td data-label="股癌">—</td>
+                        <td data-label="何星"><span class="chip chip-bullish">🟢 直接減碼</span><br>直接減 15% QQQ 部位即可，不要置換 50% 至 VOO，因兩者長期都向上且高度相關、置換增加決策點反易翻車</td>
+                        <td data-label="大仁哥"><span class="chip chip-bullish">🟢 調曝險</span><br>降波動應調整曝險比例（如從 200% 降到 80%）而非完全清空部位；用再平衡取代猜高低點</td>
+                    </tr>
+                    <tr>
+                        <td data-label="議題"><strong>半導體估值是否過高？</strong></td>
+                        <td data-label="皓哥"><span class="chip chip-neutral">🟡 超越泡沫</span><br>輝達股價營收比 16 倍（2000 年 15 倍）、美光 21 倍（2000 年 10 倍），留意回調風險；但只要算力未過剩、距泡沫破滅仍有距離</td>
+                        <td data-label="股癌"><span class="chip chip-neutral">🟡 未過剩</span><br>費半相對大盤超額報酬創歷史新高、14 個月漲 230%，但只要 AI 算力需求未過剩、距泡沫破滅仍有距離</td>
+                        <td data-label="何星"><span class="chip chip-bullish">🟢 尚合理</span><br>納指 PE 僅 23 倍（2025 年 3 月水準），尚未進入熊市條件，估值未見膨脹</td>
+                        <td data-label="大仁哥">—</td>
+                    </tr>
+                    <tr>
+                        <td data-label="議題"><strong>800V DC 是利多還是利空？</strong></td>
+                        <td data-label="皓哥">—</td>
+                        <td data-label="股癌"><span class="chip chip-bullish">🟢 真實題材</span><br>5% 已經很多、是真實題材，甚至懷疑該報告某程度上是在幫主力洗籌碼；無論 800V DC 或 400V 中繼方案，PSU 內功率元件密度都會大幅上升</td>
+                        <td data-label="何星">—</td>
+                        <td data-label="大仁哥">—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- 熱門標的 -->
+        <div class="section">
+            <h2 class="section-title">📈 熱門標的 Top 10</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">🚀 SPACEX</div>
+                        <div class="stock-mentions">提到 5 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">皓哥</span>
+                        <span class="chip chip-kol">何星</span>
+                        <span class="chip chip-kol">股癌</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-neutral">🟡 中性</span>
+                        <span style="font-size: 13px; color: #64748b;">（長期看多但短期不追高）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">IPO 定價 135 美元兩日累漲 42% 至 192 美元，市值破 3 兆超越微軟，以 600 億美元全股票收購 Cursor 母公司；散戶單日淨買 1 億美元佔全美七成；下月納入 QQQ，與特斯拉合計市值破 4 兆；但成立至今從未獲利、XAI 年虧損 32 億</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">🔷 NVDA 輝達</div>
+                        <div class="stock-mentions">提到 3 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">皓哥</span>
+                        <span class="chip chip-kol">股癌</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-neutral">🟡 中性</span>
+                        <span style="font-size: 13px; color: #64748b;">（估值拉伸但算力需求未過剩）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">股價營收比 16 倍超越 2000 年網路泡沫 15 倍高點；首次發債 250 億美元投資 AI 基礎建設；費半相對大盤超額報酬創歷史新高、14 個月漲 230%</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">💾 MU 美光</div>
+                        <div class="stock-mentions">提到 3 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">皓哥</span>
+                        <span class="chip chip-kol">股癌</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-neutral">🟡 中性</span>
+                        <span style="font-size: 13px; color: #64748b;">（估值創新高需觀察財報能否追上）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">股價營收比 21 倍是 2000 年 10 倍的兩倍以上，記憶體股罕見高估值；單日大漲近 10%，受惠記憶體族群輪動與費半創新高帶動</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">📊 QQQ</div>
+                        <div class="stock-mentions">提到 4 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">何星</span>
+                        <span class="chip chip-kol">大仁哥</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bullish">🟢 看多</span>
+                        <span style="font-size: 13px; color: #64748b;">（主力持倉、資金避風港）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">下月將快速納入 SpaceX（IPO 後 15 個交易日），何星主張專注單一標的、以部位控制波動而非置換 VOO，QQQ1 等權與原型指數今年 YTD 績效幾乎持平代表七巨頭需接棒</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">⚡ TI/STM/ON/IFNNY</div>
+                        <div class="stock-mentions">提到 2 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">股癌</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bullish">🟢 看多</span>
+                        <span style="font-size: 13px; color: #64748b;">（交期暴增、臺廠受惠二工）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">歐美 IDM 大廠 Lead time 拉到 99 週以上超過一年；安世半導體被制裁後訂單外溢、Non-China 趨勢加速，臺系美系廠商受惠；IDM 垂直整合掌握產能與定價權</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">🚗 TSLA 特斯拉</div>
+                        <div class="stock-mentions">提到 2 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">皓哥</span>
+                        <span class="chip chip-kol">何星</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bearish">🔴 偏空</span>
+                        <span style="font-size: 13px; color: #64748b;">（進度不如預期、SpaceX 成新主角）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">Robotaxi 車隊不到 100 臺、遠低於承諾的 500 臺，投資人信心面臨考驗；何星「信仰持股已有 Tesla 和 Meta，未來可能賣出部分置換 SpaceX」</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">🇹🇼 2330.TW 臺積電</div>
+                        <div class="stock-mentions">臺股焦點</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">股癌</span>
+                        <span class="chip chip-kol">皓哥</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bullish">🟢 看多</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">股癌「外面題材冷卻後資金會萬箭歸宗，投信法規已鬆綁可提高持股比重，但目前仍在等待時機」；皓哥「大量借款赴美設廠，受惠 AI 資本支出紅利」；佔新興市場 ETF 權重持續提升</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">🇹🇼 00631L 元大臺灣50正2</div>
+                        <div class="stock-mentions">臺股焦點</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">大仁哥</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bullish">🟢 看多</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">股東單週暴增 5 萬人達 28 萬創紀錄，大仁擔心新手只看漲幅不懂現金流管理；案例中從 100 元錯過到 800 多元，強調長期持有不因波動賣出</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">⚡ MRVL Marvel</div>
+                        <div class="stock-mentions">提到 1 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">股癌</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-bullish">🟢 看多</span>
+                        <span style="font-size: 13px; color: #64748b;">（CPU 類股第三次遠徵成功）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">漲幅遠超預期持續進攻，股癌「不要去幻想我們是喊盤，全球這些動起來絕對不是單一 podcast 可以喊盤造成的」</p>
+                </div>
+                
+                <div class="card">
+                    <div class="stock-header">
+                        <div class="stock-symbol">💻 IGV 軟體股ETF</div>
+                        <div class="stock-mentions">提到 1 次</div>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-kol">皓哥</span>
+                    </div>
+                    <div style="margin-bottom: 8px;">
+                        <span class="chip chip-neutral">🟡 中性</span>
+                        <span style="font-size: 13px; color: #64748b;">（波動放大可能走出獨立行情）</span>
+                    </div>
+                    <p style="font-size: 14px; color: #475569;">上週大幅震盪，年初因 AI 代理人恐慌暴跌，後急拉又獲利了結，波動率放大；若聯準會釋出鴿派訊號且協議如期簽署，可留意反彈機會</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 風險警示 -->
+        <div class="section">
+            <h2 class="section-title">⚠️ 風險警示彙總</h2>
+            
+            <div class="risk-card">
+                <div class="risk-title">🚨 槓桿累積達歷史高位、多頭踩踏風險上升</div>
+                <div class="risk-content">
+                    華爾街融資成本從 6-7% 飆至 15-30%，避險基金持續加槓桿壓注記憶體與 AI 股；韓國家庭貸款半月暴增 9.3 兆韓元、槓桿型 ETF 佔市值 2.6%、選擇權隱含波動率從 20% 飆至 80%，單日波動 5% 恐引發 47 億美元資金流出；臺灣融資維持率、融資餘額佔流通貨幣比例處歷史高位，00631L 正二股東單週暴增 5 萬人達 28 萬，新手可能只看短期漲幅、不懂曝險控制。<br>
+                    <strong>觸發條件：</strong>納指連續三天熔斷、費半單日波動 5-8%、韓國市場單日波動 5%
+                </div>
+            </div>
+            
+            <div class="risk-card">
+                <div class="risk-title">🔻 半導體估值超越 2000 泡沫、財報需追上估值</div>
+                <div class="risk-content">
+                    輝達股價營收比 16 倍超越 2000 年 15 倍、美光 21 倍是 2000 年 10 倍的兩倍；費半相對大盤超額報酬創歷史新高、14 個月漲 230%；IPO 浪潮將改寫退休金風險結構，未來投資人可能有 3-4 成資金投在尚未大規模獲利的企業。<br>
+                    <strong>觸發條件：</strong>下季財報低於預期、算力需求過剩、AI token 成本下滑速度超預期
+                </div>
+            </div>
+            
+            <div class="risk-card">
+                <div class="risk-title">⚠️ 僵固性通膨未解、聯準會可能靠統計調整降息</div>
+                <div class="risk-content">
+                    硫磺價格暴漲 500% 至 1200 美元/噸、肥料漲三倍、科技配件年增 87%；便當價格、早餐店吐司蛋餅等終端物價即便原料回調也不會下跌；聯準會可能調整統計口徑（剔除硬體只看軟體），讓核心通膨從 5% 降至 2.7%，為中期選舉前降息鋪路。<br>
+                    <strong>警戒值：</strong>核心 PCE 通膨 3.6%、PPI 年增 6.5%、能源單月漲 10%
+                </div>
+            </div>
+            
+            <div class="risk-card">
+                <div class="risk-title">🚨 美伊協議破局風險未除、原油可能反彈</div>
+                <div class="risk-content">
+                    美伊協議 60 天後仍需談判核武問題，破局風險未除，原油可能反彈；15 個亞洲國家申請 40 億美元緊急貸款（菲律賓 17.5 億、印度 15 億、孟加拉 14-15 億），能源危機尚未完全解除。<br>
+                    <strong>觸發條件：</strong>協議簽署後核武談判破局、伊朗未按時清除水雷、歐洲軍艦撤退
+                </div>
+            </div>
+            
+            <div class="risk-card">
+                <div class="risk-title">⚠️ SpaceX 估值難以計算、IPO 供給潮壓垮承接力</div>
+                <div class="risk-content">
+                    SpaceX 成立至今從未真正獲利、XAI 年虧損 32 億、燒錢速度遠超 Starlink 與火箭收入，2300 億美元 IPO 規模恐壓垮市場承接力；下月納入 QQQ 後與 Tesla 合計市值破 4 兆美元，指數前段從穩健現金流巨頭轉為高波動夢想股，日內波動 2-3%（費半 5-8%）將成常態。<br>
+                    <strong>警戒值：</strong>SpaceX 單日波動超過 10%、散戶淨買入持續破 1 億美元
+                </div>
+            </div>
+            
+            <div class="risk-card">
+                <div class="risk-title">🔻 川普民調暴跌、中期選舉政策不確定性上升</div>
+                <div class="risk-content">
+                    川普支持率從 50% 跌至 39%、反對率升至 58%，淨支持率 -10 至 -28；通膨議題支持率僅 27%（低於 2022 年拜登的 28%）；AI 資料中心民調支持率僅 27%、反對達 71%（Not in my backyard），基建推進恐不如預期。<br>
+                    <strong>觸發條件：</strong>中期選舉前政策急轉、AI 基礎建設法案卡關
+                </div>
+            </div>
+        </div>
+
+        <!-- 下週關注事件 -->
+        <div class="section">
+            <h2 class="section-title">📅 下週需關注事件</h2>
+            
+            <div class="timeline-item">
+                <div>
+                    <div class="timeline-date">📅 6/20（五）</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">🕊️ 中東停戰協議瑞士正式簽署</div>
+                        <div class="timeline-desc">
+                            伊朗 30 天內清除荷姆茲海峽水雷，美國解除港口封鎖，60 天後談判核武問題；歐洲 15 國軍艦已待命掃雷；Polymarket 民調顯示 94% 機率達成協議，法軍願意派航母代表協議真的要成。<br>
+                            <strong>為何重要：</strong>若協議如期簽署、油價跌破 70 美元，聯準會年底升息預期將大幅降溫甚至轉降息；布蘭特油若跌至 60 美元區間，能源通膨將在 6-8 月快速回調
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div>
+                    <div class="timeline-date">📅 6/23（一）</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">📊 MSCI 年度分類總檢討</div>
+                        <div class="timeline-desc">
+                            韓國可能從新興市場升級至已開發市場，印尼可能從新興市場降級至邊境市場。<br>
+                            <strong>為何重要：</strong>韓國受惠 AI 與政府補貼今年市值膨脹至 4.4 兆超越印度，升級將帶來被動資金流入；印尼今年外資流出 130 億美元，降級恐加速資金外逃
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div>
+                    <div class="timeline-date">📅 6 月底</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">🛢️ 油價是否跌破 70 美元</div>
+                        <div class="timeline-desc">
+                            布蘭特原油若跌至 65-70 美元（基準情境）或 55 美元（悲觀情境），將大幅降低升息壓力；卡達宣布一個月內恢復 50% 天然氣產能。<br>
+                            <strong>為何重要：</strong>油價回跌將壓低 7-8 月通膨數據，聯準會 9 位官員預估年底升息一次的預期有望收斂；美國汽油價格有望 7/4 前降至 3.75 美元以下，減輕川普中期選舉壓力
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div>
+                    <div class="timeline-date">📅 今年秋季</div>
+                    <div class="timeline-content">
+                        <div class="timeline-title">📋 聯準會工作組報告</div>
+                        <div class="timeline-desc">
+                            華許成立 5 個工作組評估貨幣政策、數據來源、通膨成因等。<br>
+                            <strong>為何重要：</strong>可能調整統計口徑（剔除科技硬體漲價、只看軟體服務），讓核心通膨從 5% 降至 2.7%，為中期選舉前降息鋪路
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KOL 操作策略 -->
+        <div class="section">
+            <h2 class="section-title">🧭 KOL 操作策略對照</h2>
+            <div class="grid-2">
+                <div class="kol-card">
+                    <div class="kol-header">
+                        <div class="kol-avatar">🛡️</div>
+                        <div class="kol-name">皓哥</div>
+                    </div>
+                    <div class="kol-stats">
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">倉位</div>
+                            <div class="kol-stat-value">觀望</div>
+                        </div>
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">槓桿</div>
+                            <div class="kol-stat-value">—</div>
+                        </div>
+                    </div>
+                    <div class="kol-action">
+                        觀察中東停戰協議簽署與 FOMC 後續表態，關注原油是否跌破 70 美元及聯準會釋出鴿派訊號；若協議如期簽署可留意軟體股 ETF（IGV）與 IPO 概念股反彈機會，能源股則面臨利空建議觀望或反向操作
+                    </div>
+                    <div>
+                        <span class="chip chip-stock">未明確揭露</span>
+                    </div>
+                </div>
+                
+                <div class="kol-card">
+                    <div class="kol-header">
+                        <div class="kol-avatar">⚖️</div>
+                        <div class="kol-name">股癌</div>
+                    </div>
+                    <div class="kol-stats">
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">倉位</div>
+                            <div class="kol-stat-value">高位調整中</div>
+                        </div>
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">槓桿</div>
+                            <div class="kol-stat-value">—</div>
+                        </div>
+                    </div>
+                    <div class="kol-action">
+                        被動元件開始減碼尋找下一個標的，逐步布局離散元件、功率 IC、PIMIC 等次熱門族群，等美系 IDM（如 TI、IFNNY）率先啟動再跟進臺廠；臺積電作為資金避風港，可在市場修正時分批加碼
+                    </div>
+                    <div>
+                        <span class="chip chip-stock">TSM</span>
+                        <span class="chip chip-stock">MRVL</span>
+                        <span class="chip chip-stock">被動元件</span>
+                        <span class="chip chip-stock">功率半導體</span>
+                    </div>
+                </div>
+                
+                <div class="kol-card">
+                    <div class="kol-header">
+                        <div class="kol-avatar">⚔️</div>
+                        <div class="kol-name">何星</div>
+                    </div>
+                    <div class="kol-stats">
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">倉位</div>
+                            <div class="kol-stat-value">140%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">槓桿</div>
+                            <div class="kol-stat-value">1.3x</div>
+                        </div>
+                    </div>
+                    <div class="kol-action">
+                        高位絕對不亂追，若大波動回調碰到季線或半年線第一波直接接刀（不等第二隻腳），因估值便宜、基本面支撐堅固；暫不追 SpaceX，用 QQQ 指數自動納入的方式持有，等七巨頭反彈後可考慮賣出部分 Tesla 或 Meta 置換
+                    </div>
+                    <div>
+                        <span class="chip chip-stock">QQQ</span>
+                        <span class="chip chip-stock">TSLA</span>
+                        <span class="chip chip-stock">META</span>
+                    </div>
+                </div>
+                
+                <div class="kol-card">
+                    <div class="kol-header">
+                        <div class="kol-avatar">⚔️</div>
+                        <div class="kol-name">大仁哥</div>
+                    </div>
+                    <div class="kol-stats">
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">倉位</div>
+                            <div class="kol-stat-value">140%</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="kol-stat">
+                            <div class="kol-stat-label">槓桿</div>
+                            <div class="kol-stat-value">信貸+房貸</div>
+                        </div>
+                    </div>
+                    <div class="kol-action">
+                        檢視資產配置比例（股票/現金），設定定期再平衡機制（如半年或一年一次），不因短期事件改變配置；若想降低風險，調整曝險比例（如從 200% 降到 80%）而非完全清空部位；永遠不空手，用再平衡自動賣高買低
+                    </div>
+                    <div>
+                        <span class="chip chip-stock">00631L</span>
+                        <span class="chip chip-stock">0050</span>
+                        <span class="chip chip-stock">0056</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 本週金句 -->
+        <div class="section">
+            <h2 class="section-title">😄 本週金句／笑話彙總</h2>
+            
+            <div class="quote">
+                <div class="quote-text">「馬斯克現在硬的不是翅膀，是口袋」</div>
+                <div class="quote-author">— 皓哥（6/17 早晨速解讀）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「看到別人斷頭腦袋會釋放如此愉悅的感受，相對剝奪感跟相對獲得感是能量守恆的」</div>
+                <div class="quote-author">— 何星（6/15 槓桿不賭命）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「如果你真的要論道德制高點，我現在是站在最高點，我就站在天花板，你們都是在我下面的，不好意思」</div>
+                <div class="quote-author">— 大仁哥（6/16 大仁來開槓）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「我的槓桿三部曲第 22 到 24 集，那個含金量真的像是內褲塞磚頭你知道嗎，超有料的」</div>
+                <div class="quote-author">— 大仁哥（6/16 大仁來開槓）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「你兩根大紅 K 散戶自己就來相見了，你還需要去跟大家講你要推什麼？這超 low 的」</div>
+                <div class="quote-author">— 股癌（6/17 EP671）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「Semi Analysis 說明年 5% 滲透率，我看到馬上傳給產業朋友：5% 很多欸！我們連 SpaceX 都會去買了，你說火箭什麼時候會賺錢根本不知道，那你說明年就有而且是 5%？哇靠！」</div>
+                <div class="quote-author">— 股癌（6/17 EP671）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「很多男孩子大學第一次談戀愛，女朋友沒有來，啊怎麼辦怎麼辦完蛋了完蛋。第二次要不去測一下吧。第三次再等兩週了。到第四次我已經準備好當爸爸了，沒有在怕的嘛。所以有時候同樣的利空他是會鈍化的。」</div>
+                <div class="quote-author">— 皓哥（6/16 早晨速解讀）</div>
+            </div>
+            
+            <div class="quote">
+                <div class="quote-text">「為了不要損失 20 塊，你錯過賺 200 塊的機會，那不是很愚蠢嗎？」</div>
+                <div class="quote-author">— 大仁哥（6/18 大仁來開槓）</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-source">📊 資料來源：皓哥、股癌、尼可楊、大仁哥、何星</div>
+            <div>Generated by FinfoRadar @ 2026-06-21</div>
+        </div>
+    </div>
+</body>
+</html>
